@@ -20,10 +20,10 @@
     <title>OSCOM, Starting Your Online Business with CE Phoenix</title>
     <meta name="robots" content="noindex,nofollow" />
     <link rel="icon" type="image/png" href="images/icon_phoenix.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/ext/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/ext/fonts/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="templates/main_page/stylesheet.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="/ext/js/jquery.min.js" ></script>
   </head>
 
   <body>
@@ -48,7 +48,7 @@
       <footer class="card bg-light mb-3 card-body text-center">CE Phoenix &copy; 2000-<?= date('Y') ?></footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="/ext/js/popper.min.js"></script>
+    <script src="/ext/js/bootstrap.min.js" ></script>
   </body>
 </html>

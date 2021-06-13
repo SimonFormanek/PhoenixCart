@@ -10,11 +10,10 @@
   Released under the GNU General Public License
 */
 
-class hook_admin_siteWide_jQuery {
-
+class hook_shop_siteWide_jQuery {
   public $version = '3.5.1';
 
-  public function listen_injectSiteStart() {
+  public function listen_injectAfterFooter() {
     $jQuery = '<script src="/ext/js/jquery.min.js"></script>' . PHP_EOL;
 
     return $jQuery;

@@ -11,14 +11,14 @@
 */
 
 class hook_shop_siteWide_fontAwesome {
-  var $version = '5.15.1';
+  public $version = '5.15.1';
 
-  var $sitestart = null;
+  public $sitestart = null;
 
-  function listen_injectSiteStart() {
+  public function listen_injectSiteStart() {
     $this->sitestart .= '<link rel="stylesheet" href="/ext/fonts/font-awesome/5.15.1/css/all.min.css" />' . PHP_EOL;
 
     return $this->sitestart;
   }
-  
+
 }

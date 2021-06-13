@@ -18,17 +18,16 @@ class hook_shop_siteWide_bootStrap {
   public $siteend = null;
 
   function listen_injectSiteStart() {
-    if ( defined('BOOTSTRAP_ENABLED') && (constant('BOOTSTRAP_ENABLED')  == 'True')) {
-      $this->sitestart .= '<link rel="stylesheet" href="/ext/css/bootstrap.min.css" />' . PHP_EOL;
-    }
-    return $this->sitestart;
-  }
-
-  function listen_injectSiteEnd() {
-    if ( defined('BOOTSTRAP_ENABLED') && (constant('BOOTSTRAP_ENABLED')  == 'True')) {
-      $this->siteend .= '<script src="/ext/js/popper.min.js"></script>' . PHP_EOL;
-      $this->siteend .= '<script src="/ext/js/bootstrap.min.js" ></script>' . PHP_EOL;
+    if (BOOTSTRAP_ENABLED == 'True') {
+      $this->sitestart .= '<link rel="stylesheet" href="/ext/css/bootstrap.min.css"  />' . PHP_EOL;
     }
     return $this->siteend;
   }
-}
+
+  function listen_injectSiteEnd() {
+    if (BOOTSTRAP_ENABLED == 'True') {
+      $this->siteend .= '<script src="/ext/js/popper.min.js"></script>' . PHP_EOL;
+      $this->siteend .= '<script src="/ext/js/bootstrap.min.js"></script>' . PHP_EOL;
+    }
+    return $this->siteend;
+  }
